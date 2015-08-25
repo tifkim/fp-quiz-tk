@@ -4,4 +4,8 @@ class PostsController < ApplicationController
     @post = Post.order("RANDOM()").first
   end
 
+  def new
+    @post = Post.new
+  end
+
 end
