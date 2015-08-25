@@ -1,0 +1,26 @@
+body {
+  background: url('/assets/bulldogpups.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.transparentbg {
+  background-color: rgba(0,0,0,0.5);
+  margin: auto 0;
+  padding: 10px;
+}
+.header {
+  margin: 50px auto 20px;
+}
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  border-color: black;
+  background-color: yellow;
+}
