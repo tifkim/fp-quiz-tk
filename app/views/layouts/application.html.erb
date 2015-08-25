@@ -7,11 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="transparentbg">
-    <h1>What's your favorite thing about bulldogs?</h1>
+  <header>
+    <div class="transparentbg">
+      <h1>Bulldogs are Awesome</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <%= yield %>
   </div>
-  
-<%= yield %>
+
+  <div class="container">
+      <%= link_to root_path do %>
+    <div class="col-xs-6 button">
+      <br /><br />
+      What else?
+    </div>
+    <% end %>
+    <%= link_to new_post_path do %>
+    <div class="col-xs-6 button">
+      <br />
+      I have something to add!
+    </div>
+    <% end %>
+  </div>
+
+  <div class ="footer">
+    <p>FOOTER</p>
+  </div>
 
 </body>
 </html>
