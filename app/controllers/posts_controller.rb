@@ -9,7 +9,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.create(post_params)
+    if @post.invalid?
+      flash[:error] = 'Entry was invalid.'
+    end
     redirect_to root_path
   end
 
